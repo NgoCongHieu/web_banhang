@@ -132,7 +132,7 @@ public function edit($id)
                 }
                 $this->load->model('CategoryModel');
                 $this->CategoryModel->updateCategory($id,$data);
-                $this->session->set_flashdata('success', 'Add success Category');
+                $this->session->set_flashdata('success', 'Update success Category');
                 redirect(base_url('category/list'));
             } else {
                 

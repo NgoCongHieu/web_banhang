@@ -132,7 +132,7 @@ class BrandController extends CI_Controller
                 }
                 $this->load->model('BrandModel');
                 $this->BrandModel->updateBrand($id,$data);
-                $this->session->set_flashdata('success', 'Add success Brand');
+                $this->session->set_flashdata('success', 'Update success Brand');
                 redirect(base_url('brand/list'));
             } else {
                 
@@ -142,7 +142,7 @@ class BrandController extends CI_Controller
         public function delete($id){
             $this->load->model('BrandModel');
             $this->BrandModel->deleteBrand($id);
-            $this->session->set_flashdata('success', 'Add success Brand');
+            $this->session->set_flashdata('success', 'Delete success Brand');
             redirect(base_url('brand/list'));
     }
 }

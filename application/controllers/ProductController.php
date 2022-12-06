@@ -162,7 +162,7 @@ public function edit($id)
                 }
                 $this->load->model('ProductModel');
                 $this->ProductModel->updateProduct($id,$data);
-                $this->session->set_flashdata('success', 'Add Success Product');
+                $this->session->set_flashdata('success', 'Update Success Product');
                 redirect(base_url('product/list'));
             } else {
                 

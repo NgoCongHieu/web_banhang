@@ -55,7 +55,7 @@
 				
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Features Items</h2>
+						<h2 class="title text-center">Danh sách sản phẩm</h2>
 						<?php
 						foreach($allproduct as $key =>$pro) {
 						?>
@@ -63,19 +63,20 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="<?php echo base_url('uploads/product/'.$pro->image) ?>" alt="" />
+											<img src="<?php echo base_url('uploads/product/'.$pro->image) ?>"  width="300" height="200"  alt="<?php echo $pro->title?>" />
 											<h2><?php echo number_format($pro->price,0,',','.')?>VND</h2>
 											<p><?php echo $pro->title ?></p>
+											<a href="<?php echo base_url('san-pham/'.$pro->id) ?>" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Details</a>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
-									
+
 								</div>
-								<div class="choose">
+								<!-- <div class="choose">
 									<ul class="nav nav-pills nav-justified">
 										<li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
 										<li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
 									</ul>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						<?php

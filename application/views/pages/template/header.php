@@ -9,13 +9,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home | E-Shopper</title>
-    <link href="frontend/css/bootstrap.min.css" rel="stylesheet">
-    <link href="frontend/css/font-awesome.min.css" rel="stylesheet">
-    <link href="frontend/css/prettyPhoto.css" rel="stylesheet">
-    <link href="frontend/css/price-range.css" rel="stylesheet">
-    <link href="frontend/css/animate.css" rel="stylesheet">
-	<link href="frontend/css/main.css" rel="stylesheet">
-	<link href="frontend/css/responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url('frontend/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('frontend/css/font-awesome.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('frontend/css/prettyPhoto.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('frontend/css/price-range.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('frontend/css/animate.css')?>" rel="stylesheet">
+	<link href="<?php echo base_url('frontend/css/main.css')?>" rel="stylesheet">
+	<link href="<?php echo base_url('frontend/css/responsive.css')?>" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="<?php echo base_url('gio-hang') ?>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
